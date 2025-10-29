@@ -1,0 +1,57 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.env
+*.sqlite3
+*.db
+*.DS_Store
+
+# --- Virtual Environments ---
+.env/
+.venv/
+env/
+venv/
+ENV/
+conda/
+*.conda
+*.yml
+
+# --- Jupyter & IPython ---
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# --- VSCode & IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- System Files ---
+Thumbs.db
+Desktop.ini
+
+# --- Docker ---
+*.pid
+*.tar
+*.bak
+.dockerignore
+docker-compose.override.yml
+
+# --- Node / Frontend (in case of JS extensions) ---
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# --- Build / Distribution ---
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# --- Render / Deployment ---
+.render/
+.render-build/

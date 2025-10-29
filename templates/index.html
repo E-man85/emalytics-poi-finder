@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emalytics POI Finder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/script.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #1b263b; color: white; padding: 1rem; text-align: center; }
+    form { padding: 1rem; background: #f4f4f4; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    input, select, button { padding: 8px; border-radius: 6px; border: 1px solid #ccc; }
+    #map { height: 80vh; width: 100%; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>🗺️ Emalytics POI Finder</h2>
+  </header>
+
+  <form id="poi-form">
+    <input type="number" step="any" id="lat" placeholder="Latitude" required>
+    <input type="number" step="any" id="lon" placeholder="Longitude" required>
+    <select id="tipo">
+      <option value="school">Schools</option>
+      <option value="pharmacy">Pharmacies</option>
+      <option value="restaurant">Restaurants</option>
+    </select>
+    <input type="number" id="raio" placeholder="Radius (m)" value="1000">
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="map"></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+requests
+geopy
+jinja2
